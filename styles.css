@@ -1,11 +1,30 @@
 body {
-    font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .title {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .main-img {
-    box-shadow: 0px 2px 5px lightgray;
+  box-shadow: 0px 2px 5px lightgray;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+li::after {
+  content: " > ";
+}
+
+li:last-child::after {
+  content: none;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #565959;
 }
